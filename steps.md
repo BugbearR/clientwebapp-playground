@@ -25,3 +25,11 @@ Start web server for development.
 ```
 $ pnpm dev
 ```
+
+## Remove default logos and message
+
+Edit src/main.ts
+
+## Extend app area to full client area
+
+Edit src/style.css
