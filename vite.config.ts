@@ -1,7 +1,16 @@
-import { defineConfig } from "vite";
+import { defineConfig, UserConfig } from "vite";
 import fs from "fs";
 
-const defaultConfigOptions: { server?: { https?: { key?: Buffer; cert?: Buffer } } } = {};
+const defaultConfigOptions : UserConfig = {
+    server: {
+        port: 3000,
+        strictPort: true,
+        https: {
+            key: undefined,
+            cert: undefined,
+        },
+    },
+};
 
 if (fs.existsSync("./cert/privkey.pem") && fs.existsSync("./cert/cert.pem")) {
     defaultConfigOptions.server = defaultConfigOptions.server || {};

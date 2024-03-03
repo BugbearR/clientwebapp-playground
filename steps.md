@@ -60,3 +60,9 @@ Add lint and format directive to package.json
 
 Add cert/create_localhost_cert.ts
 Add vite.config.ts
+
+## Add Playwright setting
+
+```
+pnpm dlx create-playwright
+```

@@ -9,10 +9,11 @@
     "preview": "vite preview",
     "lint": "eslint src",
     "format": "prettier --write src",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "playwright test",
     "create_localhost_cert": "tsx cert/create_localhost_cert.ts"
   },
   "devDependencies": {
+    "@playwright/test": "^1.42.1",
     "@types/node": "^20.11.24",
     "@typescript-eslint/eslint-plugin": "^7.1.0",
     "@typescript-eslint/parser": "^7.1.0",
