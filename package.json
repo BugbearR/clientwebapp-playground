@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "lint": "eslint src",
     "format": "prettier --write src",
-    "test": "playwright test",
+    "e2etest": "playwright test",
     "create_localhost_cert": "tsx cert/create_localhost_cert.ts"
   },
   "devDependencies": {
